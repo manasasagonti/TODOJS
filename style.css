@@ -9,15 +9,11 @@ body{
     padding: 10px 150px;
 }
 .header{
-    /* margin-top: 50px;
+    margin-top: 50px;
     margin-bottom: 30px;
-    margin-left: 65px; */
-    padding: 15px;
+    margin-left: 65px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
-
 }
 .hpart1{
     font-weight: bold;
@@ -30,8 +26,14 @@ body{
     /* font-family: cursive; */
     font-weight: lighter;
 }
-
-
+/* div div div span{
+     display: flex;
+    justify-content: center;
+} */
+/* #singleCard{
+    display: flex;
+    justify-content: center;
+} */
 .span{
     font-size: 28px;
     text-align: center;
@@ -55,12 +57,9 @@ i{
 .additem{
     /* display: flex; */
     /* align-items: flex-end; */
-    
-    
     color: whitesmoke;
     font-weight: lighter;
     display: flex;
-    
 }
 .popup{
     background-color: white;
@@ -107,13 +106,9 @@ i{
 }
 .size{
     font-size: 40px;
-    /* position: sticky;
-    bottom: 2%;
-    left:36%; */
-    padding-left:20px ;
-    padding-top: 20px;
-    
-    float: left;
+    position: sticky;
+    top: 55%;
+    left:17%;
     cursor: pointer;
 }
 #noitem{
@@ -122,12 +117,9 @@ i{
 }
 .del{
     font-size: 38px;
-    /* position: sticky;
-    bottom: 2%;
-    left:60%; */
-    float:right;
-    padding-right:20px ;
-    padding-top: 20px;
+    position: sticky;
+    top: 55%;
+    left:25%;
     color: red;
     cursor: pointer;
 }
@@ -159,7 +151,7 @@ button{
     gap:30px;
 }
 h2{
-    color: red;
+    color: tomato;
 }
 .container{
     display: flex;
@@ -194,15 +186,13 @@ h2{
     justify-content: space-between;
     flex-wrap: wrap;
     gap:70px;
-
-    padding: 30px;
+    /* padding: 30px; */
 }
 .taskcontainer{
-    width: 260px;
+    width: 240px;
     height: 340px;
     border-radius: 10px;
     background-color: whitesmoke;
-    overflow: auto;
 }
 .taskname{
     font-size: 23px;
@@ -227,11 +217,6 @@ h2{
     align-items: center;
     gap:5px;
 }
-#singleCard{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 @media screen and (min-width:501px) and (max-width:900px){
     body{
         padding: 10px 10px;
@@ -242,7 +227,6 @@ h2{
     .header{
         flex-direction: row;
         padding: 10px 15px;
-       
     }
     #noitem{
         text-align: center;
@@ -292,17 +276,12 @@ h2{
 }
 }
 @media screen and (min-width:250px) and (max-width:500px){
-    
     .header{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap:20px;
-        text-align: center;
-        width: 100%;
-        /* padding: 0px; */
-       
     }
     .additem{
         text-align: center;
@@ -311,9 +290,8 @@ h2{
     body{
         padding: 10px 10px;
         background-color: black;
-        /* width: 100%; */
+        width: 100%;
     }
-    
     .popup{
         width: 98%;
         text-align: center;
@@ -357,3 +335,9 @@ h2{
         font-size: 38px;
     }
 }
+
+
+
+
+
+
