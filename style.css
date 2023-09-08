@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    font-family: sans-serif;
+    overflow: auto;
+    padding: 10px 150px;
+}
+.header{
+    /* margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 65px; */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.hpart1{
+    font-weight: bold;
+    color: white;
+    font-size: 50px;
+}
+.hpart2{
+    /* font-weight: 10px; */
+    color: whitesmoke;
+    /* font-family: cursive; */
+    font-weight: lighter;
+}
+
+
+.span{
+    font-size: 28px;
+    text-align: center;
+    line-height: 40px;
+}
+.second{
+    width: 30%;
+    height: 45px;
+    display: flex;
+    /* align-items: flex-end; */
+    font-size: 20px;
+    gap: 5px;
+    cursor: pointer;
+}
+i{
+    /* display: flex;
+    align-items: flex-end; */
+    color: blue;
+    font-size: 30px;
+}
+.additem{
+    /* display: flex; */
+    /* align-items: flex-end; */
+    
+    
+    color: whitesmoke;
+    font-weight: lighter;
+    display: flex;
+    
+}
+.popup{
+    background-color: white;
+    flex-direction: column;
+    height: 230px;
+    width: 460px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 8px;
+    z-index: 50;
+    transition: all 1s ease-in;
+    animation: Popup 0.9s ease-in;
+    position:fixed;
+    top:30%;
+}
+.popup1{
+    background-color: white;
+    flex-direction: column;
+    height: 230px;
+    width: 460px;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 8px;
+    z-index: 50;
+    transition: all 1s ease-in;
+    animation: Popup 0.9s ease-in;
+    color: tomato;
+}
+@keyframes Popup {
+    from {
+        top: 100%;
+        opacity: 0;
+    }
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
+.size{
+    font-size: 40px;
+    /* position: sticky;
+    bottom: 2%;
+    left:36%; */
+    padding-left:20px ;
+    padding-top: 20px;
+    
+    float: left;
+    cursor: pointer;
+}
+#noitem{
+    color: whitesmoke;
+    margin-left: 70px;
+}
+.del{
+    font-size: 38px;
+    /* position: sticky;
+    bottom: 2%;
+    left:60%; */
+    float:right;
+    padding-right:20px ;
+    padding-top: 20px;
+    color: red;
+    cursor: pointer;
+}
+.taskname{
+    text-align: center;
+    padding: 15px;
+}
+input{
+    border: 2px solid;
+    width: 280px;
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
+}
+input::placeholder{
+    text-align: center;
+}
+button{
+     background-color: tomato;
+    color: white;
+    /* font-size: 25px; */
+    border: 2px solid;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.buttonflex{
+    display: flex;
+    gap:30px;
+}
+h2{
+    color: red;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50px ;
+    position: relative;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius:50px ; */
+    position:fixed;
+    top:30%;
+    left:40%;
+}
+.blur{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    z-index: 10;
+    display:none;
+}
+.CardContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:70px;
+
+    padding: 30px;
+}
+.taskcontainer{
+    width: 260px;
+    height: 340px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    overflow: auto;
+}
+.taskname{
+    font-size: 23px;
+    color: tomato;
+    gap: 40px;
+}
+.tasknames{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.addsubbutno{
+    font-size: 10px;
+}
+.hide{
+    display: none;
+}
+.div{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+#singleCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width:501px) and (max-width:900px){
+    body{
+        padding: 10px 10px;
+    }
+    .h1{
+        font-size: 38px;
+    }
+    .header{
+        flex-direction: row;
+        padding: 10px 15px;
+       
+    }
+    #noitem{
+        text-align: center;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+    }
+    .CardContainer{
+        /* flex-direction: column; */
+        /* align-items: center; */
+        justify-content: space-evenly;
+        width: 100%;
+        gap:17px;
+    }
+    .taskcontainer{
+        width: 220px;
+    }
+    .popup{
+        width: 98%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    input{
+        width: 90%;
+    }
+    .popup1{
+        left:2%;
+        width: 96%;
+    }
+    .additem{
+        text-align: center;
+    }
+.size{
+    font-size: 40px;
+    position: sticky;
+    bottom: 2%;
+    left:35%;
+    cursor: pointer;
+}
+.del{
+    font-size: 39px;
+    position: sticky;
+    bottom: 2%;
+    left:65%;
+    cursor: pointer;
+}
+}
+@media screen and (min-width:250px) and (max-width:500px){
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:20px;
+        text-align: center;
+        width: 100%;
+        /* padding: 0px; */
+       
+    }
+    .additem{
+        text-align: center;
+        font-size: 35px;
+    }
+    body{
+        padding: 10px 10px;
+        background-color: black;
+        /* width: 100%; */
+    }
+    
+    .popup{
+        width: 98%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    input{
+        width: 90%;
+    }
+    .CardContainer{
+        /* flex-direction: column; */
+        /* align-items: center; */
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .popup1{
+        left:2%;
+        width: 96%;
+    }
+    .taskcontainer{
+        width: 220px;
+    }
+    .size{
+        font-size: 40px;
+        position: sticky;
+        bottom: 2%;
+        left:35%;
+        cursor: pointer;
+    }
+    .del{
+        font-size: 39px;
+        position: sticky;
+        bottom: 2%;
+        left:65%;
+        cursor: pointer;
+    }
+    h2{
+        font-size: 38px;
+    }
+    i{
+        font-size: 38px;
+    }
+}

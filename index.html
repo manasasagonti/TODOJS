@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>TODO</title>
+</head>
+<body>
+    <div class="blur"></div>
+    <div class="header">
+        <div>
+        <h1>
+            <span class="hpart1">Tasks</span>
+            <span class="hpart2">List</span></h1>
+        </div>
+        <div class="additem">
+            
+                <h1 onclick="showpopup()" class="additem"><i class="fa-solid fa-circle-plus"></i></h1>
+            
+            
+                <h1 ><h2 onclick="showpopup()" >Add Item</h2></a>
+        </div>
+        </div>
+    </div>
+    <div id="parent">
+        <button onclick="back()" class="hide">Back</button>
+        <h1 id="noitem">No Items in the todo list</h1>
+        <div class="CardContainer"></div>
+        <div class="hide" id="singleCard"></div>
+    </div>
+    <div class="container">
+        <div class="popup hide" id="popup">
+            <h2>Add New List</h2>
+            <input type="text" placeholder="Add New List" id="tasknamevalue">
+            <div class="buttonflex">
+                <button onclick="addcard()">Add</button>
+                <button onclick="hidepopup()">Close</button>
+            </div>
+        </div>
+    </div>
+    <div class="container1 popup1 hide">
+</div>
+    <script src="./index.js"></script>
+</body>
+</html>
